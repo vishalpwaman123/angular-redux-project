@@ -1,0 +1,27 @@
+<div class="container bg-light">
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-success table-striped">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of list$ | async">
+            <td>{{ item.id }}</td>
+            <td>{{ item.title }}</td>
+            <td>{{ item.description }}</td>
+            <td>
+              <button class="btn btn-light me-2">Edit</button>
+              <button class="btn btn-light">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
