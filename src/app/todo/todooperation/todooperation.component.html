@@ -1,14 +1,25 @@
 <div class="container bg-light p-3">
-  <div class="row mb-3">
-    <div class="col-md-12">Todo List</div>
+  <div class="row mb-5">
+    <div class="col-md-12 fs-5">Todo List</div>
   </div>
-  <form onsubmit="handleSubmit()">
+  <form (ngSubmit)="handleSubmit()">
     <div class="row mb-5">
       <div class="col-md-6">
-        <input class="form-control" placeholder="Note title" />
+        <input
+          class="form-control"
+          placeholder="Note title"
+          name="title"
+          id="title"
+          type="text"
+        />
       </div>
       <div class="col-md-6">
-        <input class="form-control" placeholder="Note description" />
+        <input
+          class="form-control"
+          placeholder="Note description"
+          name="description"
+          id="description"
+        />
       </div>
     </div>
     <div class="row">

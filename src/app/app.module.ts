@@ -30,8 +30,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    StoreModule.forRoot({counter: counterReducer})
-    // StoreModule.forRoot({ listData: todoReducer }),
+    // StoreModule.forRoot({counter: counterReducer})
+    StoreModule.forRoot({ listData: todoReducer }),
   ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],

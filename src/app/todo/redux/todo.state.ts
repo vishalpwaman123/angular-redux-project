@@ -10,10 +10,10 @@ export interface TodoList {
 
 export const initialState : TodoList = {
   list: [
-    {
-      id: 1,
-      title: 'Note 1',
-      description: 'Note Description',
-    },
+    // {
+    //   id: 1,
+    //   title: 'Note 1',
+    //   description: 'Note Description',
+    // },
   ],
 };
