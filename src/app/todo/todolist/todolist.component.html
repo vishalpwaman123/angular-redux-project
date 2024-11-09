@@ -16,8 +16,8 @@
             <td>{{ item.title }}</td>
             <td>{{ item.description }}</td>
             <td>
-              <button class="btn btn-light me-2">Edit</button>
-              <button class="btn btn-light">Delete</button>
+              <button class="btn btn-light me-2" (click)="handleEdit(item)">Edit</button>
+              <button class="btn btn-light" (click)="handleDelete(item.id)">Delete</button>
             </td>
           </tr>
         </tbody>

@@ -5,4 +5,11 @@ export const insertNote = createAction(
   props<{ title: string; description: string }>()
 );
 export const editNote = createAction('edit');
-export const deleteNote = createAction('delete');
+export const deleteNote = createAction(
+  'delete',
+  props<{ todoListId: number }>()
+);
+export const setIsEditFlag = createAction(
+  'setIsEdit',
+  props<{ isEdit: boolean; todoListId: number }>()
+);
